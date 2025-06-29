@@ -1,50 +1,55 @@
 import React from 'react';
 
+import htmlLogo     from '../assets/html5-fill.png';
+import cssLogo      from '../assets/css3-line.png';
+import tailwindLogo from '../assets/Tailwindcss.webp';
+import jsLogo       from '../assets/javascript-line.png';
+import reactLogo    from '../assets/reactjs-line.png';
+import javaLogo     from '../assets/java-line.png';
+import sqlLogo      from '../assets/sql.webp';
+import dsaLogo      from '../assets/DSA.webp';
+
+// ⚠️  OLD string-paths hata diye, har skill ko imported logo diya
 const skills = [
-  { name: "HTML", logo: "./src/assets/html5-fill.png", per: "80%" },
-  { name: "CSS", logo: "./src/assets/css3-line.png", per: "70%" },
-  {name : "Tailwind CSS",logo : "./src/assets/Tailwindcss.webp",per : "70%"},
-  { name: "JAVASCRIPT", logo: "/src/assets/javascript-line.png", per: "70%" },
-  { name: "REACTJS", logo: "/src/assets/reactjs-line.png", per: "80%" },
-  { name: "JAVA", logo: "/src/assets/java-line.png", per: "70%" },
-  {name : "SQL",logo : "/src/assets/sql.webp",per : "60%"},
-  { name: "DSA", logo: "/src/assets/DSA.webp", per: "70%" },
-  { name: "MERN Stack", logo: "/src/assets/html5-fill.png", per: "80%" }
-  
+  { name: 'HTML',         logo: htmlLogo,     per: '80%' },
+  { name: 'CSS',          logo: cssLogo,      per: '70%' },
+  { name: 'Tailwind CSS', logo: tailwindLogo, per: '70%' },
+  { name: 'JAVASCRIPT',   logo: jsLogo,       per: '70%' },
+  { name: 'REACTJS',      logo: reactLogo,    per: '80%' },
+  { name: 'JAVA',         logo: javaLogo,     per: '70%' },
+  { name: 'SQL',          logo: sqlLogo,      per: '60%' },
+  { name: 'DSA',          logo: dsaLogo,      per: '70%' },
+  { name: 'MERN Stack',   logo: htmlLogo,     per: '80%' }
 ];
 
-const Skills = () => {
-  return (
-    <div className='h-full' id='skills'>
-      <div className='flex h-full flex-col bg-black text-white'>
-        <div className='flex items-center justify-center mt-0 text-4xl font-semibold mb-3'>
-          <h1 className='text-white'>Skills</h1>
-        </div>
-        <div className='flex flex-col items-center justify-center'>
+const Skills = () => (
+  <div id="skills" className="h-full">
+    <div className="flex h-full flex-col bg-black text-white">
+      <h1 className="mt-0 mb-3 text-4xl font-semibold text-center">Skills</h1>
 
-          {skills.map((skill, index) => (
-            <div className='bg-gray-700 p-4 rounded-lg mt-2' key={index}>
-              <div  className='w-75 md:w-150 lg:w-220 bg-orange-400 rounded-lg lg:p-6 p-4 flex flex-col items-center justify-center'>
-              <div className='flex items-center justify-center gap-3'>
-                <h1 className='text-xl font-semibold'>{skill.name}</h1>
-                <img className='w-8 h-8' src={skill.logo} alt={skill.name} />
+      <div className="flex flex-col items-center">
+        {skills.map(({ name, logo, per }, idx) => (
+          <div key={idx} className="mt-2 rounded-lg bg-gray-700 p-4 w-full max-w-md">
+            <div className="flex flex-col items-center rounded-lg bg-orange-400 p-4 lg:p-6">
+              <div className="flex items-center gap-3">
+                <h2 className="text-xl font-semibold">{name}</h2>
+                <img src={logo} alt={name} className="h-8 w-8" />
               </div>
-              <div className='flex gap-2 items-center w-full'>
-                <div className='bg-red-400 h-2 w-full rounded-lg mt-2'>
-                  <div className='h-2 bg-red-700 rounded-lg' style={{ width: skill.per }}></div>
+
+              <div className="mt-2 flex w-full items-center gap-2">
+                <div className="h-2 w-full rounded-lg bg-red-400">
+                  <div className="h-2 rounded-lg bg-red-700" style={{ width: per }} />
                 </div>
-                <h3 className='text-base font-semibold'>{skill.per}</h3>
+                <span className="text-base font-semibold">{per}</span>
               </div>
             </div>
-            </div>
-          ))}
-
-        </div>
-        <div className='mt-5 h-[2px] bg-gray-700'></div>
+          </div>
+        ))}
       </div>
-     
+
+      <div className="mt-5 h-[2px] bg-gray-700" />
     </div>
-  );
-}
+  </div>
+);
 
 export default Skills;
