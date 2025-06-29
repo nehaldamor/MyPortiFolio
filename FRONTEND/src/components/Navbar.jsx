@@ -34,14 +34,34 @@ const Navbar = () => {
         ref={sidebarRef}
         className="fixed top-0 left-0 w-64 h-full bg-black text-white transform -translate-x-full"
       >
-        <div className="flex flex-col items-center mt-10">
-          {/* social icons */}
-          <div className="flex items-center gap-4 mt-5">
-            <img className="h-8 invert" src={linkedinIcon} alt="LinkedIn" />
-            <img className="h-7 invert" src={githubIcon} alt="GitHub" />
-            <img className="h-7 invert" src={githubIcon} alt="GitHub" />
-            <img className="h-8 invert" src={leetIcon} alt="LeetCode" />
-          </div>
+       <div className="flex items-center gap-4 mt-5">
+  <a
+    href="linkedin.com/in/nehal-damor"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <img className="h-8 invert" src={linkedinIcon} alt="LinkedIn" />
+  </a>
+
+  <a
+    href="https://github.com/nehaldamor"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <img className="h-7 invert" src={githubIcon} alt="GitHub" />
+  </a>
+
+ 
+
+  <a
+    href="https://leetcode.com/u/Nehal_Damor/"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <img className="h-8 invert" src={leetIcon} alt="LeetCode" />
+  </a>
+</div>
+
 
           {/* nav links */}
           <div className="mt-10 space-y-6">
