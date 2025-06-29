@@ -3,9 +3,9 @@ import { Link } from "react-scroll";
 import gsap from "gsap";
 
 // ⬇️  Step-1: import सारी icons
-import homeIcon from "./assets/home-line.png";
-import userIcon from "./assets/user.png";
-import folderIcon from "./assets/folder-image-line.png";
+import homeIcon from "../assets/home-line.png";
+import userIcon from "../assets/user.png";
+import folderIcon from "../assets/folder-image-line.png";
 import skillIcon from "./assets/Skill.png";
 import eduIcon from "./assets/education.png";
 import contactIcon from "./assets/contacts-line.png";
