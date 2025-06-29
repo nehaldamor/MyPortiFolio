@@ -6,14 +6,14 @@ import gsap from "gsap";
 import homeIcon from "../assets/home-line.png";
 import userIcon from "../assets/user.png";
 import folderIcon from "../assets/folder-image-line.png";
-import skillIcon from "./assets/Skill.png";
-import eduIcon from "./assets/education.png";
-import contactIcon from "./assets/contacts-line.png";
-import linkedinIcon from "./assets/linkedin.svg";
-import githubIcon from "./assets/github.png";
-import leetIcon from "./assets/leetcode.svg";
-import menuIcon from "./assets/menu-fill.png";
-import closeIcon from "./assets/close-circle-fill.png";
+import skillIcon from "../assets/Skill.png";
+import eduIcon from "../assets/education.png";
+import contactIcon from "../assets/contacts-line.png";
+import linkedinIcon from "../assets/linkedin.svg";
+import githubIcon from "../assets/github.png";
+import leetIcon from "../assets/leetcode.svg";
+import menuIcon from "../assets/menu-fill.png";
+import closeIcon from "../assets/close-circle-fill.png";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
