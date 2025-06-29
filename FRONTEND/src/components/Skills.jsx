@@ -1,9 +1,9 @@
 import React from 'react';
 
 const skills = [
-  { name: "HTML", logo: "/src/assets/html5-fill.png", per: "80%" },
-  { name: "CSS", logo: "/src/assets/css3-line.png", per: "70%" },
-  {name : "Tailwind CSS",logo : "/src/assets/Tailwindcss.webp",per : "70%"},
+  { name: "HTML", logo: "./src/assets/html5-fill.png", per: "80%" },
+  { name: "CSS", logo: "./src/assets/css3-line.png", per: "70%" },
+  {name : "Tailwind CSS",logo : "./src/assets/Tailwindcss.webp",per : "70%"},
   { name: "JAVASCRIPT", logo: "/src/assets/javascript-line.png", per: "70%" },
   { name: "REACTJS", logo: "/src/assets/reactjs-line.png", per: "80%" },
   { name: "JAVA", logo: "/src/assets/java-line.png", per: "70%" },
