@@ -3,17 +3,17 @@ import { Link } from "react-scroll";
 import gsap from "gsap";
 
 // ⬇️  इमेजें इम्पोर्ट करें
-import linkedinIcon from "./assets/linkedin.svg";
-import githubIcon  from "./assets/github.png";
-import leetcodeIcon from "./assets/leetcode.svg";
-import homeIcon   from "./assets/home-line.png";
-import userIcon   from "./assets/user.png";
-import folderIcon from "./assets/folder-image-line.png";
-import skillIcon  from "./assets/Skill.png";
-import eduIcon    from "./assets/education.png";
-import contactIcon from "./assets/contacts-line.png";
-import closeIcon  from "./assets/close-circle-fill.png";
-import menuIcon   from "./assets/menu-fill.png";
+import linkedinIcon from "../assets/linkedin.svg";
+import githubIcon  from "../assets/github.png";
+import leetcodeIcon from "../assets/leetcode.svg";
+import homeIcon   from "../assets/home-line.png";
+import userIcon   from "../assets/user.png";
+import folderIcon from "../assets/folder-image-line.png";
+import skillIcon  from "../assets/Skill.png";
+import eduIcon    from "../assets/education.png";
+import contactIcon from "../assets/contacts-line.png";
+import closeIcon  from "../assets/close-circle-fill.png";
+import menuIcon   from "../assets/menu-fill.png";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
