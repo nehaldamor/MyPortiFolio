@@ -12,7 +12,7 @@ app.use(express.json());
 
 app.post("/send-email",async(req,res)=>{
     const {name,email,message}=req.body;
-    console.log(name,email,message)
+    
     try {
         let transporter = nodemailer.createTransport({
             service: 'gmail',
