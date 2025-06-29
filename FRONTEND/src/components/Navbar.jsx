@@ -10,7 +10,7 @@ import skillIcon from "../assets/Skill.png";
 import eduIcon from "../assets/education.png";
 import contactIcon from "../assets/contacts-line.png";
 import linkedinIcon from "../assets/linkedin.svg";
-import githubIcon from "../assets/github.png";
+import githubIcon from "../assets/github.svg";
 import leetIcon from "../assets/leetcode.svg";
 import menuIcon from "../assets/menu-fill.png";
 import closeIcon from "../assets/close-circle-fill.png";
